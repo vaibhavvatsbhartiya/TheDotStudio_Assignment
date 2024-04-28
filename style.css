@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.test {
+    max-width: 1070px;
+    max-height: 808px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.why-choose-us {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: center;
+}
+
+/* Basic styles for the image container */
+.image-container {
+    position: relative;
+    /* width: 100%; */
+    max-width: 411px;
+    max-height: 265px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+
+/* Styles for the image */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styles for the overlay text */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay on hover */
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container:hover .hide {
+    opacity: 0;
+}
+
+/* Show title inside image without hover */
+.image-container:not(:hover) .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.heading1{
+    color: rgba(17, 74, 141, 0.8);
+}
+
+.heading2{
+    color:  rgba(255, 199, 88, 1)
+}
